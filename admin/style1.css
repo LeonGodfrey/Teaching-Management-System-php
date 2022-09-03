@@ -1,0 +1,82 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+
+
+}
+
+
+.Abody{
+	font-size: 120%;
+	background: #dcdcdc;
+
+}
+
+.Aheader{
+	width: 30%;
+	margin: 0px auto 0px;
+	color: #4CAF50;
+	background-color: (241, 249, 250);
+	text-align: center;
+	border: 3px solid #4CAF50 ;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px ;
+	padding: 20px;
+}
+
+
+
+
+.Aform{
+
+	width: 30%;
+	margin:0px auto;
+	padding: 20px;
+	border: 3px solid turquoise;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+
+}
+
+
+.input-groupA{
+	margin: 10px 0px 10px 0px;
+}
+
+.input-groupA label{
+	display: block;
+	text-align: left;
+	margin: 3px;
+
+}
+
+.input-groupA input{
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border:2px solid rgb(160, 228, 220);
+
+}
+
+.btnA{
+
+	padding: 10px;
+	font-size: 15px;
+	border:none;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+    border-radius: 5px;
+
+
+
+
+}
+

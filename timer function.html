@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <a href="#" id="myButton1" onclick="timer();swap();end();">start lecture</a>
+        <a href="#" onclick="stop();swap();end();end2();"  
+        id="myButton2">stop lecture</a>
+
+        <script>
+            function end(){
+                var x = document.getElementById("myButton1");
+                if( x.textContent ==="start lecture"){
+                   x.textContent ="ongoing...";
+                        }  
+                    else {
+                        x.textContent="lecture ended";
+                        
+                    }  }
+            
+        </script>
+         <script>
+            function end2(){
+                var x = document.getElementById("myButton2");
+                if( x.textContent ==="start lecture"){
+                   x.textContent ="ongoing...";
+                        }  
+                    else {
+                        x.textContent="lecture ended";
+                        
+                    }  }
+            
+        </script>
+        <div id="swaptext">Lecture not yet started</div>
+        <script>
+            function swap(){
+                var x = document.getElementById("swaptext");
+               if( x.innerHTML ==="Lecture not yet started"){
+                   x.innerHTML = "Lecture Ongoing";
+                }
+                 else{
+                     x.innerHTML = "Your lecture has been ended";
+                 }
+            }
+        </script>
+
+        <label id="hours">00</label>:
+        <label id="minutes">00</label>:
+        <label id="seconds">00</label>
+
+        <script>
+     function timer(){ 
+
+var hoursLabel   = document.getElementById("hours");
+var minutesLabel = document.getElementById("minutes");
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+var totalMinutes = 0;
+check = setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  totalMinutes += totalMinutes;
+  hoursLabel.innerHTML = pad(parseInt(totalMinutes / 60));
+}
+
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
+     }
+     
+
+</script>
+<script>
+    function stop() {
+           clearInterval(check);
+           check = null;
+           document.getElementById("myButton2").innerHTML = '0';
+       }
+   </script>
+    </body>
+
+</html>
