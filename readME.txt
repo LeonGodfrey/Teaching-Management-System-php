@@ -1,5 +1,8 @@
 welcome to ssegawas prototype of the teaching MS
 
+you can use this code for educational projects
+sample accounts
+
 admin Details
 email;
 ssegodfrey171@gmail.com
